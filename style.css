@@ -1,0 +1,109 @@
+/*this is my body section  */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FFD700, #d10aeb, #21d5f9, #FF69B4);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* this is my container */
+.container {
+    width: 90%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+/* this is my heading tag */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* this is my form container */
+.form-container {
+    width: 40%;
+    float: left;
+    text-align: left;
+    padding: 20px;
+}
+/* this is my laber property */
+label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+/* this is my input property */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+/* this is my button property */
+button {
+    display: block;
+    background: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* this is my button hover */
+button:hover {
+    background: black;
+}
+/* this is my table container  */
+.table-container {
+    width: 55%;
+    margin-top: 2%;
+    float: right;
+    max-height: 400px; /* Enables scrollbar dynamically */
+    overflow-y: auto;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+/* this is table head  */
+th {
+    background: black;
+    color: white;
+}
+/* htis is my reset button property */
+.reset-btn {
+    background: #FFD700;
+    color: rgb(224, 14, 14);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* this is delete button property */
+.delete-btn {
+    background: #FF4500;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
