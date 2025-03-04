@@ -1,109 +1,244 @@
-/*this is my body section  */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(45deg, #FFD700, #d10aeb, #21d5f9, #FF69B4);
-    background-size: 400% 400%;
-    animation: gradientBG 8s ease infinite;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+ /* this is universal selector */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  /* this is main  */
+    .main {
+        background-color: #e89a76;
+        min-height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-bottom: 50px;
+    }
+/* this is my header property  */
+    header {
+        height: 140px;
+        width: 100vw;
+        font-family: futura;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-/* this is my container */
-.container {
-    width: 90%;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top: 50px;
-}
-/* this is my heading tag */
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-/* this is my form container */
-.form-container {
-    width: 40%;
-    float: left;
-    text-align: left;
-    padding: 20px;
-}
-/* this is my laber property */
-label {
-    display: block;
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-/* this is my input property */
-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    font-size: 16px;
-}
-/* this is my button property */
-button {
-    display: block;
-    background: gray;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-/* this is my button hover */
-button:hover {
-    background: black;
-}
-/* this is my table container  */
-.table-container {
-    width: 55%;
-    margin-top: 2%;
-    float: right;
-    max-height: 400px; /* Enables scrollbar dynamically */
-    overflow-y: auto;
-    border: 1px solid black;
-}
+    header h1 {
+        font-size: 4vw;
+        text-transform: uppercase;
+        color: #071952;
+        text-shadow: 5px 5px 10px white;
+    }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+    header h3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px white;
+    }
+/* this is my form property  */
+    .form {
+        height: 60vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-/* this is table head  */
-th {
-    background: black;
-    color: white;
-}
-/* htis is my reset button property */
-.reset-btn {
-    background: #FFD700;
-    color: rgb(224, 14, 14);
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* this is delete button property */
-.delete-btn {
-    background: #FF4500;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    form {
+        padding: 10px;
+        height: 57vh;
+        background-color: white;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    label {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 1px 1px 3px #37B7C3;
+    }
+
+    input {
+        height: 36px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-left: 15px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(231, 231, 231);
+        font-size: 17px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        color: rgb(0, 0, 0);
+        background-color: #E8F0FE;
+    }
+
+    input:focus {
+        border-bottom: 2px solid rgb(148, 148, 223);
+    }
+/* this is my form button property  */
+    form button {
+        height: 40px;
+        width: 140px;
+        font-size: 18px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        background-color: #fc230b;
+        color: white;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-shadow: 1px 1px 3px black;
+        transition: 0.3s ease-in-out;
+    }
+
+/* this is my form button hover property */
+    form button:hover {
+        background-color: #f2e314;
+        color: #00030b;
+    }
+/* this my table property  */
+    .Table {
+        margin-top: 100px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+
+    }
+
+    .Table h1 {
+        color: #071952;
+        font-size: 2vw;
+        font-weight: 700;
+        text-shadow: 1px 1px 3px #ffffff;
+        transition: all 1s linear;
+    }
+
+    .Table h1:hover {
+        color: aqua;
+        cursor: pointer;
+    }
+/* this is my table property  */
+
+    table {
+        border: 1px solid black;
+        padding: 5px;
+        font-size: 25px;
+        text-shadow: 1px 1px 3px #f7efef;
+    }
+
+    tr {
+        height: 30px;
+        width: 80vw;
+    }
+
+    th {
+        width: 18vw;
+        text-align: center;
+        color: black;
+    }
+
+    td {
+        padding: 2px;
+        color: #071952;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: 500;
+    }
+
+
+
+    td i {
+        cursor: pointer;
+    }
+/* this is my footer property */
+    footer {
+        height: 200px;
+        width: 100vw;
+        padding: 50px 0px 10px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* this is Media  query for mobile */
+
+    @media (max-width:600px) {
+
+        header {
+            height: 140px;
+            padding: 5px 10px;
+        }
+
+        header h1 {
+            font-size: 7vw;
+            text-align: center;
+        }
+
+        header h3 {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        form button {
+            height: 30px;
+            width: 120px;
+            font-size: 15px;
+        }
+
+        .Table {
+            margin-bottom: 50px;
+        }
+
+        .Table h1 {
+            color: #071952;
+            font-size: 6vw;
+            margin: 10px 0px;
+        }
+
+        table {
+            padding: 0px;
+            font-size: 25px;
+        }
+
+        tr {
+            height: 30px;
+            width: 100vw;
+        }
+
+        th {
+            font-size: 11px;
+        }
+
+        td {
+            padding: 0px;
+            font-weight: 500;
+            font-size: 15px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+
+        td i {
+            cursor: pointer;
+        }
+    }
