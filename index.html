@@ -1,65 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--this is meta tag  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="auther" content="Ravi shankar">
+    <meta name="keywords"
+        content="student registration, student records, student management, education, school, university, register students">
+    <meta name="author" content="Ravi shankar">
+    <link rel="icon" href="https://tse3.mm.bing.net/th?id=OIP.uHg9sCIUCaJEYqLdIJBmEQHaHa&pid=Api&P=0&h=180"
+        type="image/x-icon">
+    <!--this is my Title -->
+
     <title>Student Registration System</title>
-    <!-- this is use to link the css file -->
+
+    <!-- this is my css file link -->
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- this link use for Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<!-- this is my body section -->
+
 <body>
-    <section class="container">
-        <!-- this is my header -->
-        <h1>Student Registration System</h1>
 
-           <!-- this is my student registration section -->
-        <section class="form-container">
-            <form id="student-form">
-                <label for="studentName">Student Name:</label>
-                <input type="text" id="studentName" required pattern="[A-Za-z ]+" title="Only letters allowed">
-
-                <label for="studentID">Student ID:</label>
-                <input type="number" id="studentID" required>
-
-                <label for="studentClass">Class:</label>
-                <input type="text" id="studentClass" required>
-
-                <label for="rollNo">Roll No.:</label>
-                <input type="number" id="rollNo" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-
-                <label for="contact">Contact No.:</label>
-                <input type="tel" id="contact" required pattern="[0-9]{10}" title="Enter a valid 10-digit number">
-
-                <button type="submit">Add Student</button>
+    <div class="main">
+        <!-- this is my header div-->
+        <header>
+            <h1>Student Registration System</h1>
+            <h3>Register and manage student details with ease.</h3>
+        </header>
+        <!-- this is my Form -->
+        <div class="form">
+            <form action="" onsubmit="handleFormSubmit(event)">
+                <label for="name">Student Name :</label>
+                <input type="text" id="name">
+                <label for="ID">Student ID :</label>
+                <input type="number" id="ID">
+                <label for="Email">Email ID :</label>
+                <input type="email" id="Email">
+                <label for="Contact">Contact No :</label>
+                <input type="number" id="Contact">
+                <button type="submit">Register <i class="fa-solid fa-check"></i></button>
             </form>
-        </section>
-               <!-- this is my student records section -->
-        <section class="table-container">
+        </div>
+        <!-- this is my Table -->
+        <div class="Table">
+            <h1>REGISTERED STUDENT</h1>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
                         <th>ID</th>
-                        <th>Class</th>
-                        <th>Roll No.</th>
                         <th>Email</th>
-                        <th>Contact No.</th>
-                        <th>Actions</th>
+                        <th>Mobile Number</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
-                <tbody id="student-table-body">
-                    <!-- Student records will be displayed here -->
+
+                <tbody>
+
                 </tbody>
             </table>
-        </section>
-    </section>
-<!-- this is use to link our javascript file -->
-    <script src="script.js"></script>
+        </div>
+
+        <!-- this is my Footer div -->
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 All rights reserved.@RaviShankar</p>
+                <p>Contact us: <a href="mailto:ravisingh90104@gmail.com"> <img src="image/icons8-email.gif" alt="Email" class="w-8 h-8"></a></p>
+               
+                <p>Follow us on:
+                    <a href="https://www.facebook.com/profile.php?id=100008732023451" target="_blank">
+                        <img src="image/icons8-facebook-circled.gif" alt="Facebook" class="w-8 h-8">
+                    </a>
+                   
+                    <a href="https://www.linkedin.com/in/ravi-singh2626?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank">
+                        <img src="image/icons8-linkedin.gif" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                    <a href="https://github.com/RaviShankar-rs26" target="_blank">
+                        <img src="image/icons8-github.gif" alt="GitHub" class="w-8 h-8">
+                    </a>
+                </p>
+                <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- this is my javascript file link -->
+
+    <script src="index.js"></script>
 </body>
-</html>
+
+</html>  
